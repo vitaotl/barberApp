@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+
+import UserContextProvider from './src/contexts/UserContext'
+import MainStack from './src/stacks/MainStack'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app! TESTE FUNCIONOU</Text>
-      <StatusBar style="auto" />
-    </View>
+    <UserContextProvider>
+      <NavigationContainer>
+        <MainStack />
+      </NavigationContainer>
+    </UserContextProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#eee',
+    borderColor: 'red',
+    borderWidth: 5,
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+
+
