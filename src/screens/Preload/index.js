@@ -1,5 +1,3 @@
-2:10
-
 import React, { useEffect, useContext } from 'react'
 import { Container, LoadingIcon } from './styles'
 import { useNavigation } from '@react-navigation/native'

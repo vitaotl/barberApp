@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import AsyncStorage from '@react-native-community/async-storage'
 import { UserContext } from '../../contexts/UserContext'
 import { useNavigation } from '@react-navigation/native'
