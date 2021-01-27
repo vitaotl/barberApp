@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native'
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import UserContextProvider from './src/contexts/UserContext'
 import MainStack from './src/stacks/MainStack'
